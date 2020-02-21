@@ -1,4 +1,13 @@
-/*Begin body*/
+/*Begin Font*/
+@font-face{
+  font-family: "Road Rage";
+  src: url("fonts/Road_Rage.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+/*End Font*/
+
+/*Begin Global*/
 * {
   padding: 0;
   margin: 0;
@@ -10,8 +19,119 @@ html{
   color: #bfbfbf;
 }
 body{
-  background-color: #4f0087;
+  background: url("https://www.freepik.com/free-photos-vectors/background") no-repeat center fixed;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
-/*End body*/
+
+a{
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+p{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+img{
+  width: 100%;
+}
+/*End Global*/
+
+/*Start Header*/
+header{
+  width: 100%;
+  height: 100vh;
+}
+
+.top-nav{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  background-color: #1e1e4a;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 650ms cubic-bezier(1,0,0,1);
+}
+
+.top-nav.open{
+  top: 0;
+  border-radius: initial;
+}
+
+.menu-toggler{
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 2000;
+  transition: transform 650ms ease-out;
+}
+
+.menu-toggler.open{
+  transform: rotate(-450deg);
+}
+
+.bar{
+  background: linear-gradient(to right, #ffe838, #fd57bf);
+  width: 100%;
+  height: 4px;
+  border-radius: 1rem;
+}
+
+.bar.half{
+  width: 50%;
+}
+
+.bar.start{
+  align-self: center;
+  transition: transform 650ms ease-out;
+}
+
+.open .bar.start{
+  background-color: black;
+  transform: rotate(450deg) translateX(0.8rem);
+}
+
+.bar.end{
+  align-self: center;
+  transition: transform 650ms ease-out;
+}
+
+.open .bar.end{
+  transform: rotate(-450deg) translateX(0.8rem);
+}
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 2rem;
+}
+
+.nav-link{
+  font-family: 'Road Rage', sans-serif;
+  font-size: 4rem;
+  padding: 1.5rem;
+}
+
+.nav-link:hover,.nav-link:focus{
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*End Header*/
