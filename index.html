@@ -137,20 +137,69 @@
         <h6>Most recent jobs</h6>
       </div>
       <div class="timeline">
-        <ul>
+        <ul class="timeline-list">
           <li class="date" data-date="01/2019 - Present">
             <h1>adorsys</h1>
-            <p>
-              sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-              no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-            </p>
+            <h2>Frontend Web Developer</h2>
+            <ul class="experience-list">
+              <li>
+                Worked collaboratively in an international team
+              </li>
+              <li>
+                Designed and implemented components of an angular banking-interface web application
+              </li>
+              <li>
+                Wrote functionality tests in angular
+              </li>
+              <li>
+                programmed automation scripts in python
+              </li>
+            </ul>
           </li>
           <li class="date" data-date="03/2018 - 01/2019">
             <h1>DATEV</h1>
-            <p>
-              sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-              no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-            </p>
+            <h2>C++ Software Developer</h2>
+            <ul class="experience-list">
+              <li>
+                Assisted in the C++ development of germany's biggest wage accounting system
+              </li>
+              <li>
+                Took full responsibility for software features, assigned to me
+              </li>
+              <li>
+                Refined rough feature requirements in close cooperation with the users
+              </li>
+              <li>
+                Was part of agile software development
+              </li>
+              <li>
+                Had the opportunity to present my work department-wide
+              </li>
+            </ul>
+          </li>
+          <li class="date" data-date="11/2016 - 03/2018">
+            <h1>Wavecon</h1>
+            <h2>Web Design</h2>
+            <ul class="experience-list">
+              <li>
+                Usability test of a control panel with extensively documentation
+              </li>
+              <li>
+                Designed the company's new website
+              </li>
+              <li>
+                Wrote texts for the company's website
+              </li>
+              <li>
+                Designed logos
+              </li>
+              <li>
+                Learned basics of cloud computing
+              </li>
+              <li>
+                Created Corporate Identity conform documents
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -165,7 +214,7 @@
         <h1>Contact</h1>
         <h6>Just leave a message</h6>
       </div>
-      <form action="">
+      <form action="#" method="post" id="form" name="form">
         <label for="name">Name: </label>
         <input type="text" id="name" name="name" placeholder="Your full name..." required>
         <label for="email">Email: </label>
@@ -176,6 +225,7 @@
         <textarea name="mailBody" id="mailBody" cols="30" rows="15"></textarea>
         <input type="submit" value="Submit"/>
       </form>
+      <?php include "secure_email_code.php"?>
     </div>
   </section>
 
