@@ -19,7 +19,7 @@ html{
   color: #bfbfbf;
 }
 body{
-  background: url("images/background.jpg") no-repeat center fixed;
+  background: url("images/background_small.jpg") no-repeat center fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -612,8 +612,14 @@ input[type="submit"]:hover{
   .timeline p {
     font-size: 1.5rem;
   }
+  .timeline .timeline-list {
+    width: 85%;
+  }
   .timeline .date::before {
     font-size: 1.4rem;
+    transform: rotate(90deg);
+    font-weight: 700;
+    left: -14rem;
   }
   .contact {
     width: 100%;
