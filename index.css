@@ -23,6 +23,7 @@ body{
   background-size: cover;
   height: 100%;
   width: 100%;
+  min-width: fit-content;
 }
 
 a{
@@ -173,6 +174,17 @@ header{
   height: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -183,8 +195,8 @@ li {
 
 .nav-link{
   font-family: 'Road Rage', sans-serif;
-  font-size: 4rem;
-  padding: 4rem;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 .nav-link:hover,.nav-link:focus{
@@ -253,6 +265,9 @@ li {
   flex: 1;
 }
 
+.contact li{
+  margin: 0 2rem;
+}
 .social-media{
   margin-top: 10rem;
 }
@@ -556,7 +571,7 @@ input[type="submit"]:hover{
     right: 2rem;
   }
   .landing-text h1 {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .landing-text h6 {
     font-size: 1.2rem;
