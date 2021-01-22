@@ -97,6 +97,10 @@ section:last-of-type{
   color: #ffe838;
 }
 
+.vertical-spacer{
+  margin-top: 2rem;
+}
+
 /*Start Header*/
 header{
   width: 100%;
@@ -244,6 +248,15 @@ li {
   margin-bottom: 6rem;
 }
 
+.about-content{
+  flex: 1;
+  height: 100%;
+  background-color: rgba(34, 30, 63, .8);
+  padding: 2rem;
+  border: 1.5px solid rgba(255, 255, 255, .6);
+  border-radius: .5rem;
+}
+
 .about-heading h1{
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
   font-size: 12rem;
@@ -254,6 +267,14 @@ li {
   font-size: 2rem;
   font-weight: 400;
   border: 1.5px solid rgba(191, 191, 191, 0.4);
+}
+
+.tech-list-heading{
+  margin-bottom: 1rem;
+}
+
+.tech-list{
+  font-size: 2rem;
 }
 
 .profile-img{
@@ -269,7 +290,7 @@ li {
   margin: 0 2rem;
 }
 .social-media{
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .social-media i{

@@ -9,7 +9,6 @@ $().ready(function () {
     })
 
     $(".nav-list").on("click","a",function(){
-        console.log("LUUUL");
         $(".top-nav").toggleClass("open");
         $(".menu-toggler").toggleClass("open");
     })
